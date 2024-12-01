@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: rgb(15, 23, 42);
+    min-height: 3000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.swal2-icon {
+    font-family: inherit !important;  /* Hilangkan pengaruh FontAwesome */
+}
+
+.swal2-icon.swal2-warning {
+    background-color: #f8bb86 !important; /* Ubah warna icon jika diperlukan */
+    border-color: #f8bb86 !important;
+}
+
+/* backgrond code RGB (15,23,42) */
+/* background text rgb(16, 65, 62) */
+/* text header code  */
+
+/* HOME DESKTOP */
+.home {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* NAVBAR DESKTOP */
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 70px;
+    background-color: rgb(16, 65, 62);
+}
+
+header h2 {
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    left: 100px;
+    font-size: 20px;
+}
+
+header h2, header ul li a, .field-text-home h1 span, .field-text-home h3 {
+    color: rgb(94, 234, 212);
+}
+
+header ul {
+    position: absolute;
+    right: 90px;
+    margin-top: 5px;
+}
+
+header ul li {
+    display: inline;
+    margin: 0px 12px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    transition: .3s;
+}
+
+header ul li a:hover {
+    color: rgb(27, 137, 122);
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* NAVBAR DESKTOP */
+
+
+/* MAIN HOME */
+.section-home {
+    position: absolute;
+    left: 100px;
+    right: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.field-text-home {
+    width: 70%;
+}
+
+.field-text-home h1 {
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -10px;
+    color: white;
+}
+
+.field-text-home h1 br {
+    display: none;
+}
+
+
+.field-text-home h3 {
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.field-text-home h3 span {
+    color: white;
+}
+
+.field-text-home p {
+    font-family: 'Roboto', sans-serif;
+    max-width: 75%;
+}
+
+.field-image-home {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-image-home img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+.home .swipe-up {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    right: 50%;
+    margin-left: -50px;
+    background-color: rgb(16, 65, 62);
+    color: rgb(94, 234, 212);
+    border: 1px solid rgb(94, 234, 212);
+    transition: .3s;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+
+.home .swipe-up:hover {
+    background-color: rgb(10, 44, 41);
+    width: 112px;
+    height: 41px;
+    border: none;
+}
+
+.home .arrow-swipeup {
+    color: rgb(94, 234, 212);
+    margin-top: 4px;
+}
+
+/* HOME */
+
+
+/* ABOUT DESKTOP */
+.about {
+    padding: 100px 0;
+}
+
+.container-about {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 80px 70px;
+    background-color: rgb(16, 65, 62);
+    border: 2px solid rgb(94, 234, 212);
+    border-radius: 30px;
+}
+
+.container-about h1 {
+    color: rgb(94, 234, 212);
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container-about h1 span {
+    color: white;
+}
+
+.container-about p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container-about p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+/* ABOUT DESKTOP */
+
+
+/* SKILLS DESKTOP */
+.skill {
+    padding: 80px 0;
+
+}
+
+.skill h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skill h1 span {
+    color: rgb(94, 234, 212);
+
+}
+
+.container-image-skill {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field-image-skill {
+    position: relative;
+    background-color: rgb(16, 65, 62);
+    width: 20%;
+    border: 2px solid rgb(94, 234, 212);
+    border-radius: 12px;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-image-skill span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(94, 234, 212);
+    color: rgb(16, 65, 62);
+    border: none;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 180px;
+    transform: scale(0, 1);
+    transform-origin: bottom;
+    transition: transform .5s;
+
+}
+
+.field-image-skill:hover span {
+    transform: scale(1);
+
+}
+
+.image-skill {
+    width: 120px;
+}
+
+/* SKILLS DESKTOP */
+
+
+/* PROJECT DESKTOP */
+.project {
+    padding: 80px 0 40px;
+}
+
+.project h1 {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(94, 234, 212);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.project h1 span {
+    color: white;
+}
+
+.container-project {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.field-project {
+    width: 42%;
+    border-radius: 12px;
+    padding: 12px 40px 12px 12px;
+    background-color: rgb(16, 65, 62);
+    border: 1px solid rgb(94, 234, 212);
+    transition: transform .3s ease-in-out;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: max-content;
+    row-gap: 22px;
+    grid-template-areas: 
+    'main-project' 'technology-project';
+    transition: transform .3s;
+}
+
+.field-project:hover {
+    transform: translateY(-10px);
+}
+
+.link-to-project {
+    grid-area: main-project;
+    display: flex;
+    gap: 16px;
+}
+
+.field-project img {
+    border-radius: 8px;
+    width: 30%;
+    min-height: 120px;
+}
+
+.field-text-project {
+    width: 70%;
+    margin-top: 3px;
+}
+
+.field-text-project h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.field-text-project h3 span {
+    color: rgb(94, 234, 212);
+}
+
+.description-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.technology-project {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    grid-area: technology-project;;
+}
+
+.technology-project a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: rgb(16, 65, 62);
+    border: 2px solid rgb(27, 137, 122);
+    color: rgb(94, 234, 212);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.technology-project a:hover {
+    cursor: pointer;
+}
+
+
+/* PROJECT DESKTOP */
+
+/* CERTIFICATE DESKTOP */
+.galery {
+    padding: 80px 0 40px;
+
+}
+
+.galery h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(94, 234, 212);
+    margin-bottom: 40px;
+}
+
+.galery h1 span {
+    color: white;
+}
+
+.container-certificate {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px 60px;
+}
+
+.field-certificate {
+    width: 27%;
+    height: 250px;
+    position: relative;
+}
+
+.field-certificate img:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+}
+
+.field-certificate .icon-eye {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    background-color: #666;
+    text-align: center;
+    line-height: 250px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.field-certificate:hover {
+    cursor: pointer;
+}
+
+.field-certificate:hover i {
+    opacity: 0.9;
+}
+
+.overlay-image-certificate {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .3s;
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-overlay-certificate {
+    position: relative;
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.field-overlay-certificate img {
+    width: 90%;
+    height: 400px;
+}
+
+.overlay-image-certificate button {
+    position: absolute;
+    bottom: 40px;
+    width: 16%;
+    height: 40px;
+    background-color: darkred;
+    border: none;
+    border-radius: 12px;
+}
+
+.overlay-image-certificate button:hover {
+    cursor: pointer;
+}
+
+
+/* CERTIFICATE DESKTOP */
+.contact {
+    padding: 80px 0;
+}
+
+.contact h1 {
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(94, 234, 212);
+    margin-bottom: 40px;
+}
+
+.contact h1 span {
+    color: white;
+}
+
+.container-contact {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+
+.sosmed-and-maps {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.domain-and-contact {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.domain-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.domain-contact a span {
+    color: rgb(94, 234, 212);
+}
+
+
+i {
+    color: rgb(94, 234, 212);
+}
+
+
+.domain-and-contact a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+iframe {
+    border-radius: 24px;
+    margin-bottom: 24px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; /* Menempatkan ikon di tengah secara horizontal */
+    align-items: center;
+    gap: 0%; /* Jarak antar ikon di desktop */
+}
+
+.social-media i {
+    margin: 0%; /* Menghapus margin agar menggunakan flex gap */
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+    .social-media {
+        flex-direction: column; /* Menyusun ikon secara vertikal di perangkat kecil */
+        gap: 5%; /* Mengatur jarak antar ikon di perangkat kecil */
+        align-items: center; /* Menempatkan ikon di tengah */
+    }
+}
